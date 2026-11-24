@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - NexusGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nexus<span>Games</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Loja</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contatos.html" class="ativo">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="contato-wrapper">
+            <h2>Fale Conosco</h2>
+            <p>Teve algum problema com sua chave de ativação ou quer tirar dúvidas? Mande uma mensagem!</p>
+
+            <form class="form-contato" onsubmit="enviarMensagem(event)">
+                <div class="campo">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto">
+                        <option value="suporte">Suporte com Pedido</option>
+                        <option value="duvida">Dúvida sobre um Jogo</option>
+                        <option value="parceria">Parcerias / Criadores</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="5" placeholder="Descreva como podemos ajudar..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-comprar">Enviar Mensagem</button>
+            </form>
+
+            <div class="info-direta">
+                <h3>Outros Canais</h3>
+                <p><strong>E-mail:</strong> suporte@nexusgames.com.br</p>
+                <p><strong>Discord:</strong> discord.gg/nexusgames</p>
+                <p><strong>Atendimento:</strong> Segunda a Sexta, das 09h às 18h</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NexusGames. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function enviarMensagem(event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso! Nossa equipe responderá em breve.');
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusGames - Sua Loja de Jogos Digitais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nexus<span>Games</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="ativo">Loja</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Os Melhores Jogos em Um Só Lugar</h1>
+        <p>Entrega imediata da chave digital (Steam, Epic, PlayStation e Xbox).</p>
+    </section>
+
+    <main class="container">
+        <h2>Destaques da Semana</h2>
+        
+        <div class="grade-jogos">
+            <!-- Jogo 1 -->
+            <div class="card-jogo">
+                <img src="https://placehold.co/300x180/1e1e2e/00ffcc?text=Cyber+Odyssey" alt="Cyber Odyssey">
+                <div class="info-jogo">
+                    <span class="categoria">RPG / Ação</span>
+                    <h3>Cyber Odyssey 2099</h3>
+                    <p class="preco">R$ 199,90</p>
+                    <button class="btn-comprar" onclick="comprar('Cyber Odyssey 2099')">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Jogo 2 -->
+            <div class="card-jogo">
+                <img src="https://placehold.co/300x180/1e1e2e/ff007f?text=Shadow+Realm" alt="Shadow Realm">
+                <div class="info-jogo">
+                    <span class="categoria">Aventura / Fantasia</span>
+                    <h3>Shadow Realm: Origins</h3>
+                    <p class="preco">R$ 149,50</p>
+                    <button class="btn-comprar" onclick="comprar('Shadow Realm: Origins')">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Jogo 3 -->
+            <div class="card-jogo">
+                <img src="https://placehold.co/300x180/1e1e2e/ffaa00?text=Speed+Rivals" alt="Speed Rivals">
+                <div class="info-jogo">
+                    <span class="categoria">Corrida</span>
+                    <h3>Speed Rivals: Turbo</h3>
+                    <p class="preco">R$ 89,90</p>
+                    <button class="btn-comprar" onclick="comprar('Speed Rivals: Turbo')">Comprar Agora</button>
+                </div>
+            </div>
+
+            <!-- Jogo 4 -->
+            <div class="card-jogo">
+                <img src="https://placehold.co/300x180/1e1e2e/00aaff?text=Galactic+War" alt="Galactic War">
+                <div class="info-jogo">
+                    <span class="categoria">Estratégia</span>
+                    <h3>Galactic War IV</h3>
+                    <p class="preco">R$ 119,00</p>
+                    <button class="btn-comprar" onclick="comprar('Galactic War IV')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NexusGames. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function comprar(nomeJogo) {
+            alert('Você adicionou "' + nomeJogo + '" ao carrinho! (Simulação de compra)');
+        }
+    </script>
+
+</body>
+</html>
